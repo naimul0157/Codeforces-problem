@@ -4,11 +4,17 @@ using namespace std;
 int main() {
     int n;
     cin>>n;
-    int i, j;
-    for (int i = 1; i <=n; i++)
+    int k, j;
+    int count=0;
+    for (int i = 0; i < n; i++)
     {
-        cin>>i>>j;
+        cin>>k>>j;
+        if (j>k && j-k>=2)
+        {
+            count++;
+        }
+        
     }
-    cout<<"hello";
+    cout<<count;
     return 0;
 }
